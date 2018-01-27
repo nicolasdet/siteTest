@@ -1,6 +1,20 @@
 # siteTest
 
 
+## le projet
+
+
+Ce site sert d'exemple de test a des test d'intégration / unitaires
+
+J'en profite pour en faire un Boilerplate codeIgniter propre, afin de déployer un projet capable d'étre tester en quelques lignes.
+
+Ce projet disposera de quesques routes, Une ou deux tables, surrement un CRUD et tout ces tests. 
+
+Dans la forme l'application représente un site proposant un sérvice gratuit ou payent avec une petite inscription. 
+
+Je suis pas sure d'avoir le temp de tout finir donc a voir... 
+
+
 
 ## set up 
 
