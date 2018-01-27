@@ -12,6 +12,12 @@ composer update
 
 executer toute les requete sql dans application/migrationSql. les faire dans l'ordre de préférence. 
 
+
+lancer le serveur apache !
+(facultatif)  configurer le virtualHost si vous voulez sans oublier de changer la baseUrl dans config/config et partout ou on défini l'environement... 
+
+
+
 et voila le site est pret a fonctionner !
 
 ## Test 
