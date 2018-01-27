@@ -17,6 +17,8 @@ class MY_Controller extends CI_Controller
 	{
 		parent::__construct();
 
+		$this->load->model('produit');
+
 		date_default_timezone_set('Europe/Paris');
 
 		//$this->forceHttps();

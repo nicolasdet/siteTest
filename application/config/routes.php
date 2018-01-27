@@ -60,3 +60,10 @@ $route['php_cour'] = 'php_cour';
 
 $route['users'] = 'users';
 $route['user/(:num)'] = 'user/index/$1';
+
+
+
+
+//   Vrai route du projet Test
+
+$route['produit/(:num)'] = 'product/index/$1';

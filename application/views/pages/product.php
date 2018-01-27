@@ -5,26 +5,20 @@
 
     <div class="container">
       <div class="card-deck mb-3 text-center">
-        <?php 
-        foreach ($produits as $unProduit):
-        ?>
 
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal"> <?= $unProduit->intituler ?> </h4>
+            <h4 class="my-0 font-weight-normal"> <?= $produit->intituler ?> </h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$<?= $unProduit->prix ?> <small class="text-muted">/ mo</small></h1>
-            <p> <?= $unProduit->description ?> </p>
-            <a href="/produit/<?= $unProduit->produit_id ?>">
-            <button type="button" id="button-<?= $unProduit->intituler ?>" class="btn btn-lg btn-block btn-outline-primary">Voir le produit <?= $unProduit->intituler ?></button>
+            <h1 class="card-title pricing-card-title">$<?= $produit->prix ?> <small class="text-muted">/ mo</small></h1>
+            <p> <?= $produit->description ?> </p>
+            <a href="/produit/<?= $produit->produit_id ?>">
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Commander ce produit</button>
           </a>
           </div>
         </div>
 
-        <?php 
-           endforeach;
-        ?>
 
       </div>
