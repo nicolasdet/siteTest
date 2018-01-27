@@ -23,10 +23,12 @@ et voila le site est pret a fonctionner !
 ## Test 
 
 testunitraire = phpUnit
+
 Bdd           = Behat + mink + sélénium + chrome 
 
 
 les Features ce trouvent dans le dossier du même nom 
+
 Il faut lancer le serveur sélénium:
 
 assumon que MonProjet correspond a la racine du projet.
