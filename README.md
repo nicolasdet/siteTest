@@ -40,3 +40,71 @@ le driver chrome est sur mon PC dans E:\ mais j'ai mis le fichier dans TestBehat
 
 $ cd MonProjet
 $ ./vendor/bin/behat   (executer cette commande dans le git bash c'est mieux si on est sur windows )
+
+
+
+## code Igniter
+
+### routes 
+
+les routes ce trouvent dans config route 
+
+premier param = dossier/page rechercher
+deuxieme param s'il trouve pas une page il cherche la fonction 
+troisieme param il injecte (:num) en param de la fonction
+
+exemple :
+$route['user/(:num)'] = 'user/index/$1';
+
+ira chercher controller/user  fouction index($1)
+
+### controller. 
+
+
+tout les controller sont dans application/controller 
+
+majuscule au Nom du fichier et de la classe
+
+tout les controller extends de MY_Controller
+
+pour rendre une vue on fait  $this->render('maVue');
+
+pour apeller une classe du model on fait :  $this->load->model('monModel');
+
+pour injecter des data a la vue on fait : $this->theme->data('var', $data);
+
+pour les css et js on fait : $this->theme->js   OU $this->theme-css
+
+### model. 
+
+
+les model sont dans application/model
+
+ils ont tous la même sintaxe il sufit de regarder "produit" et de faire pareille 
+
+Un model = une table, il faut juste déclarer le nom de la table et la primary key    ( oui c'est plus rapide/simple qu'un orm )
+
+il existe pleins de fonction prédéfini tel que $this->get(id)   ou $this->get_all()  ou $this->update ..... on peut aussi écrire les requete a la main !
+
+### migration
+
+il n'y a pas d'orm pour mapper la bdd alors je stoque chaque requete dans un dossier migration. 
+
+je nome c'est migrations par ordre et éventuellement avec un déscriptif ! 
+
+il faut évidament toute les executée sur une nouvelle bdd !.
+
+on les apelles dans le controller comecesi $this->load->model('monModel');
+
+### vue 
+
+dans application/view/pages
+
+c'est une vue quoi :) 
+
+le layout est défini dans application/view/layout
+
+et ce layout utilise des slice dans application/view/slices
+
+elle doivent etre déclarer dans le controller cf: MY_Controller 
+
