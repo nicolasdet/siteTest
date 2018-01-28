@@ -18,4 +18,12 @@ class Product extends MY_Controller {
 
 		//$this->load->view('users', $data);
 	}
+
+
+	public function add($id = null)
+	{
+		Msg::addMessage('erreur vous devez vous authentifier avant de commander un produit');
+
+		return $this->index($id);
+	}
 }

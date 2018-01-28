@@ -5,8 +5,11 @@
     	</a>
     		
       <nav class="my-2 my-md-0 mr-md-3">
+        <!--
         <a class="p-2 text-dark" href="#">Test Unitaire</a>
         <a class="p-2 text-dark" href="#">BDD</a>
+      -->
       </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
+      <a class="btn btn-outline-primary mx-2" id="sign_up_btn" href="create">Sign up</a>
+      <a class="btn btn-outline-primary mx-2" id="sign_in_btn" href="connect">Sign in</a>
     </div>

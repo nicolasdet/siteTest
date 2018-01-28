@@ -13,11 +13,15 @@ class MY_Controller extends CI_Controller
 	protected $tracking_page = '';
 	protected $tracking_params = [];
 
+	
+
 	public function __construct($layout = 'main')
 	{
 		parent::__construct();
 
 		$this->load->model('produit');
+		$this->load->model('User', 'user');
+		$this->load->model('Commandes', 'commandes');
 
 		date_default_timezone_set('Europe/Paris');
 
@@ -28,7 +32,10 @@ class MY_Controller extends CI_Controller
 			$this->output->enable_profiler(true);
 
 		$this->loadAssets();
+		
 	}
+
+
 
 	public function initTheme($layout = 'main') {
 

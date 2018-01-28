@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = ['Slices', 'Stencil'];
+$autoload['libraries'] = ['Session','database',  'Slices', 'Stencil' , 'Msg'];
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = ['stencil', 'url'];
+$autoload['helper'] = ['stencil', 'url', 'my'];
 
 /*
 | -------------------------------------------------------------------

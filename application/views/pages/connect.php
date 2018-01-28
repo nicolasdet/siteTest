@@ -10,14 +10,17 @@
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal"> <?= $produit->intituler ?> </h4>
+            <h4 class="my-0 font-weight-normal"> ce connecter </h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$<?= $produit->prix ?> <small class="text-muted">/ mo</small></h1>
-            <p> <?= $produit->description ?> </p>
-            <a href="/produit/add/<?= $produit->produit_id ?>">
-            <button type="button" id="btn-command" class="btn btn-lg btn-block btn-outline-primary">Commander ce produit</button>
-          </a>
+            <form method="POST" action="/connect/log">
+                
+                <input type="test" name="login" placeholder="login" />
+                <input type="password" name="password" placeholder="mdp">
+
+                <input id="valider_inscription" type="submit" name="form" value="valider">
+
+            </form>
             <?php
             echo Msg::showMessageOnce();
             ?>
