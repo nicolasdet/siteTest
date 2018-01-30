@@ -57,7 +57,7 @@ $route['php_cour'] = 'php_cour';
 
 
 //   Vrai route du projet Test
-
+$route['home'] = 'welcome';
 $route['default_controller'] = 'welcome';
 # product
 $route['produit/(:num)'] = 'product/index/$1';
@@ -69,4 +69,5 @@ $route['create/delete'] = 'create/delete';
 
 
 $route['connect'] = 'connect';
+$route['connect/logout'] = 'connect/logout';
 $route['connect/log'] = 'connect/log';

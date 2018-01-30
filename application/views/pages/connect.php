@@ -15,8 +15,8 @@
           <div class="card-body">
             <form method="POST" action="/connect/log">
                 
-                <input type="test" name="login" placeholder="login" />
-                <input type="password" name="password" placeholder="mdp">
+                <input  type="test" name="login" placeholder="login" />
+                <input  type="password" name="password" placeholder="mdp">
 
                 <input id="valider_inscription" type="submit" name="form" value="valider">
 

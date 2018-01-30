@@ -10,6 +10,19 @@
         <a class="p-2 text-dark" href="#">BDD</a>
       -->
       </nav>
+      <?php 
+        //var_dump($this->session);
+        if(!$this->session->userdata('connected') ||  $this->session->userdata('connected') != true):
+      ?>
       <a class="btn btn-outline-primary mx-2" id="sign_up_btn" href="create">Sign up</a>
       <a class="btn btn-outline-primary mx-2" id="sign_in_btn" href="connect">Sign in</a>
+
+      <?php 
+        else :
+      ?>
+
+      <a class="btn btn-outline-primary mx-2" id="deconnect" href="connect/logout">Ce déconnecter</a>
+
+    <?php endif; ?>
+
     </div>

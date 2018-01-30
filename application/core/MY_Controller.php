@@ -32,6 +32,7 @@ class MY_Controller extends CI_Controller
 			$this->output->enable_profiler(true);
 
 		$this->loadAssets();
+		//$this->load->library('session');
 		
 	}
 

@@ -17,4 +17,4 @@ default:
 
         contexts: [FeatureContext, WebContext]
 
-        filters: { tags: '@core' }
+        filters: { tags: '@user' }

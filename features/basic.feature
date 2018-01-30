@@ -2,7 +2,7 @@
 
 	@core
 	Feature: basic
-		permet de vérifier que le panier fonctionne -- cette page est déstiner au visiteur non identifié.
+		Permet de vérifier que les page de base s'affichent correctement et l'inscription d'un user.
 		ps: il faut vider la bdd sinon les insértion en base peuvent étre fausser !
 
 
