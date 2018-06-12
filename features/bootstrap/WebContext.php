@@ -16,7 +16,6 @@ class WebContext extends MinkContext
 
     /**
      * @When I click the :arg1 element
-     */
     public function iClickTheElement($selector)
     {
         $page = $this->getSession()->getPage();
@@ -28,6 +27,7 @@ class WebContext extends MinkContext
 
         $element->click();
     }
+     */
 
   
 

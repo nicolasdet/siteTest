@@ -77,3 +77,16 @@
 			And I click the "#valider_inscription" element
 			Then I should not see "erreur le formulaire est mal remplis"
 			Then I should see "erreur le login est deja utilisé"
+
+		@javascript
+		Scenario: go on page sign up & validate less than 3char login & password
+			Given I am on the homepage
+			Then I should see "Application de Test"
+			And I Wait for 1 segonds
+			And I click the "#sign_up_btn" element
+			And I Wait for 1 segonds
+			And I fill in "login" with "te"
+			And I fill in "password" with "te"
+			And I click the "#valider_inscription" element
+			Then I should not see "erreur le formulaire est mal remplis"
+			Then I should see "erreur 3 charractere minnimum "
